@@ -66,7 +66,7 @@ class Function():
         plt.xticks(index+0.4, list(result.values()))
         plt.show() 
 
-    def save(self, mas_vac): #проверено
+    def save(self, mas_vac):
         with open("vacancies_russ.csv", mode="w", encoding='utf-8') as w_file:
             file_writer = csv.writer(w_file, delimiter = ";", lineterminator="\r")
             file_writer.writerow(["Название вакансии", "Ссылка", "Город" ,"Время публикации", "Зарплата от", "Зарплата до"])
